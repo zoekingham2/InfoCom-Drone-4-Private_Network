@@ -11,7 +11,7 @@ CORS(app, supports_credentials=True)
 
 # change this so rhat you can connect to your redis server
 # ===============================================
-redis_server = redis.Redis("REDIS_SERVER")
+redis_server = redis.Redis(host="localhost", port=6379, db=0)
 # ===============================================
 
 geolocator = Nominatim(user_agent="my_request")
